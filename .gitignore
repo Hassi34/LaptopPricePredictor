@@ -1,0 +1,13 @@
+.ipynb_checkpoints
+*.zip
+*.csv
+*.xlsx
+*.xls
+*.joblib
+*.cfg
+data
+__pycache__
+Include
+Lib
+Scripts
+pyvenv.cfg 
