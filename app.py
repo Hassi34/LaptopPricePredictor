@@ -1,4 +1,10 @@
+#Made changes to github directly
 import streamlit as st
+st.set_page_config(
+page_title="Copyright © 2021 Hasnain",
+page_icon="🎢"
+)
+
 import pickle
 import numpy as np
 
@@ -65,4 +71,10 @@ if st.button('Predict Price'):
 
     query = query.reshape(1,12)
     st.title("The predicted price of this configuration is " + str(int(np.exp(pipe_lgbm.predict(query)[0]))))
-
+    
+    
+st.header('Get the Code')
+github_link = '[GitHub](https://github.com/Hassi34/LaptopPricePredictor.git)'
+st.markdown(github_link, unsafe_allow_html=True)
+portfolio_link = '[My Portfolio](https://hasnainmehmood.pythonanywhere.com/)'
+st.markdown(portfolio_link, unsafe_allow_html=True)
